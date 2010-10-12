@@ -1,0 +1,8 @@
+1. <% if logged_in? %>  
+2.   Welcome <%= current_user.username %>! Not you?  
+3.   <%= link_to "Log out", logout_path %>  
+4. <% else %>  
+5.   <%= link_to "Sign up", signup_path %> or  
+6.   <%= link_to "log in", login_path %>.  
+7.   
+8. <% end %>
